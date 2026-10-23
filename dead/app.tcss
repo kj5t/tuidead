@@ -1,0 +1,44 @@
+# Dead Archives TUI - CSS
+
+/* Main container */
+#main-container {
+    border: solid blue;
+    margin: 1;
+    padding: 1;
+}
+
+/* Player container */
+#player-container {
+    border: solid green;
+    margin: 1;
+    padding: 1;
+}
+
+/* Title */
+#title {
+    content-align: center middle;
+    margin-bottom: 1;
+    color: blue;
+}
+
+/* Now playing title */
+#now-playing-title {
+    margin-bottom: 1;
+    color: green;
+}
+
+/* Search input */
+#search-input {
+    margin-bottom: 1;
+}
+
+/* Show list */
+#show-list {
+    margin-bottom: 1;
+    height: 20;
+}
+
+/* Current track */
+#current-track {
+    margin-bottom: 1;
+}

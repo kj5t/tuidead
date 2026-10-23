@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: tuidead
+Version: 0.1.0
+Summary: Terminal-based player for Dead Archives
+Author: Dead Archives TUI Team
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: textual>=0.40.0
+Requires-Dist: httpx>=0.24.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+
+# Dead Archives TUI
+
+A terminal-based player for the Dead's recordings from archive.org.
+
+## Features
+
+- Browse shows by date
+- Play recordings with gapless playback
+- Track listing with progress bar
+- Favorites and playback history
+- Local caching for fast access
+
+## Installation
+
+```bash
+pip install .
+```
+
+## Usage
+
+```bash
+tuidead
+```
+
+## Development
+
+To run the CLI test:
+
+```bash
+python dead/cli_test.py
+```
+
+## Project Structure
+
+- `dead/` - Main application code
+  - `archive.py` - Archive.org API client
+  - `model.py` - Data models
+  - `player.py` - MPV player integration
+  - `store.py` - SQLite storage
+  - `app.py` - Textual UI
+  - `cli_test.py` - CLI test script

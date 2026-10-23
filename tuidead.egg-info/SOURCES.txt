@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+dead/app.py
+dead/archive.py
+dead/cli_test.py
+dead/model.py
+dead/player.py
+dead/store.py
+tuidead.egg-info/PKG-INFO
+tuidead.egg-info/SOURCES.txt
+tuidead.egg-info/dependency_links.txt
+tuidead.egg-info/entry_points.txt
+tuidead.egg-info/requires.txt
+tuidead.egg-info/top_level.txt

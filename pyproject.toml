@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tuidead"
+version = "0.1.0"
+description = "Terminal-based player for Dead Archives"
+authors = [
+    {name = "Dead Archives TUI Team"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "textual>=0.40.0",
+    "httpx>=0.24.0",
+]
+
+[project.scripts]
+tuidead = "main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]

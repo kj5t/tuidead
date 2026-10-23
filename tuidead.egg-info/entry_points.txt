@@ -1,0 +1,2 @@
+[console_scripts]
+tuidead = main:main
