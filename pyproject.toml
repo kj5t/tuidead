@@ -22,7 +22,7 @@ dependencies = [
 ]
 
 [project.scripts]
-tuidead = "main:main"
+tuidead = "dead.app:main"
 
 [project.optional-dependencies]
 dev = [

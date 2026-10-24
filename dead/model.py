@@ -1,7 +1,7 @@
 """
 Data models for Dead Archives
 """
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import List, Optional
 
 
@@ -11,6 +11,7 @@ class Show:
     date: str  # YYYY-MM-DD
     venue: str
     city: str
+    recordings: List['Recording'] = field(default_factory=list)
     
     def __str__(self):
         return f"{self.date} - {self.venue}, {self.city}"
@@ -25,6 +26,7 @@ class Recording:
     review_count: int
     best_format: str  # mp3, ogg, flac
     tracks: List['Track'] = None
+    source: str = ""  # lineage text from archive.org
     
     def __post_init__(self):
         if self.tracks is None:
@@ -39,6 +41,7 @@ class Track:
     length: int  # seconds
     set: str
     position: int
+    url: str = ""
     
     def __str__(self):
         return f"{self.position}. {self.title}"

@@ -24,7 +24,7 @@ async def main():
         print(f"Found show: {show}")
         
         # Test getting recording tracks
-        recording = await client.recording_tracks("gd77-05-08.sbd.hicks")
+        recording = await client.recording_tracks(show.recordings[0].identifier)
         print(f"Recording: {recording.identifier}")
         print(f"Source: {recording.source_type}")
         print(f"Rating: {recording.rating} ({recording.review_count} reviews)")

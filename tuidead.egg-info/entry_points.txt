@@ -1,2 +1,2 @@
 [console_scripts]
-tuidead = main:main
+tuidead = dead.app:main

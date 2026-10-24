@@ -6,6 +6,7 @@ dead/cli_test.py
 dead/model.py
 dead/player.py
 dead/store.py
+dead/store_test.py
 tuidead.egg-info/PKG-INFO
 tuidead.egg-info/SOURCES.txt
 tuidead.egg-info/dependency_links.txt

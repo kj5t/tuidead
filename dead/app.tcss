@@ -1,44 +1,65 @@
 # Dead Archives TUI - CSS
 
-/* Main container */
+/* Search input */
+#search-input {
+    margin: 0 1;
+}
+
+/* Main container: shows | tracks */
 #main-container {
+    height: 1fr;
+}
+
+#shows-pane {
+    width: 1fr;
     border: solid blue;
-    margin: 1;
-    padding: 1;
+}
+
+#tracks-pane {
+    width: 1fr;
+    border: solid blue;
+}
+
+#shows-pane:focus-within, #tracks-pane:focus-within {
+    border: solid $accent;
+}
+
+.pane-title {
+    height: 1;
+    padding: 0 1;
+    color: $text-muted;
+}
+
+#show-list, #track-list {
+    height: 1fr;
 }
 
 /* Player container */
 #player-container {
     border: solid green;
-    margin: 1;
-    padding: 1;
-}
-
-/* Title */
-#title {
-    content-align: center middle;
-    margin-bottom: 1;
-    color: blue;
-}
-
-/* Now playing title */
-#now-playing-title {
-    margin-bottom: 1;
-    color: green;
-}
-
-/* Search input */
-#search-input {
-    margin-bottom: 1;
-}
-
-/* Show list */
-#show-list {
-    margin-bottom: 1;
-    height: 20;
+    height: 4;
+    padding: 0 1;
 }
 
 /* Current track */
 #current-track {
-    margin-bottom: 1;
+    height: 1;
+}
+
+#progress-row {
+    height: 1;
+}
+
+/* Progress bar */
+#progress-bar {
+    width: 1fr;
+}
+
+#progress-bar Bar {
+    width: 1fr;
+}
+
+#time {
+    width: auto;
+    padding-left: 1;
 }
